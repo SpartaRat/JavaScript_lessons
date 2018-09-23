@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 07 - JS</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+			== igual a
+			=== igual em valor e tipo
+			!= Diferente
+			!== Diferente em valor e tipo
+			> maior que
+			< menor que
+			>= maior ou igual
+			<= menor ou igual
+			&& e
+			|| ou
+			! não
+			var idade = 20;
+			var situacao = (idade >= 18) ? 'Maioridade' : 'Menor';
+
+			var n = 4;
+
+			if(n > 5){
+				console.log('Condição verdadeira');
+			}else if(n == 5){
+				console.log('N é igual a 5');
+			}else{
+				console.log('Condição Falsa');
+			}
+
+			console.log(situacao);
+		*/
+
+		var diasemana = new Date().getDay();
+		switch(diasemana){
+			case 6:
+				console.log('Hoje é sábado #partiubalada');
+				break;
+			case 0:
+				console.log('Hoje é domingo #curandoaressaca');
+				break;
+			default:
+				console.log('Dia normal: trabalho + estudo');
+		}
+	</script>
+</body>
+</html>
