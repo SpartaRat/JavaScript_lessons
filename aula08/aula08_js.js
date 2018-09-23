@@ -1,0 +1,14 @@
+function verifica() {
+    var x = document.getElementById('numero').value;
+    try {
+        if (x == '') throw 'Informe um valor';
+        if(isNaN(x)) throw 'Você precisa informar um numero';
+        x = Number(x);
+        if(x > 20 || x < 10) throw 'Informe um numero entre 10 e 20';
+        document.getElementById('msg').innerHTML = 'Perfeito, você digitou o número: ' + x;
+    }catch(erro) {
+        document.getElementById('msg').innerHTML = 'Erro: ' + erro;
+    }finally{
+        document.getElementById('numero').value = '';
+    }
+}
