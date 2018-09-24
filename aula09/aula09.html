@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Aula 09 - JS</title>
+        <link rel="stylesheet" type="text/css" href="aula09.css"/>
+    </head>
+    <body>
+        <h1 onclick="changeText(this)" onmouseover="mouse1(this)" onmouseout="mouse2(this)">Passe o mouse aqui !</h1>
+        <div>
+            <select name="" id="demos" onchange="checkLoad()">
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2">Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+                <option value="opcao4">Opção 4</option>
+            </select>
+            <input type="text" id="demonstra" onchange="checkLoad()" />
+        </div>
+        <div class="img_div" style="margin: 50pt">
+            <img id="imagem" src="wallhaven-26599.jpg" alt="Texto Alternativo" width="100%"/>
+        </div>
+
+        <button id="bt_img" onclick="trocaImagem()">Troca Imagem</button>
+        <p id="demo"></p>
+        <p class="exemplo"></p>
+        <div class="exemplo"></div>
+        <script src="aula09.js"></script>
+    </body>
+</html>
