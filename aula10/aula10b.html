@@ -1,0 +1,27 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>Aula 10 b - JS</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <script src="aula10.js"></script>
+</head>
+<body>
+    <div>
+        <h1 id="myName"></h1>
+    </div>
+    <input type="button" value="Voltar"  onclick="window.history.back()"/>
+    <input type="button" value="Avançar" onclick="window.history.forward()"/>
+    <Input type="button" value="Change Name" onclick="alerta"/>
+    <input type="button" value="Cancelar" onclick="clearInterval(inter)">
+    <script>
+        window.localStorage.setItem('nome', 'Andre');
+        window.sessionStorage.setItem('nome2', 'Luis');
+        document.getElementById('myName').innerHTML = window.localStorage.getItem('nome') + ' ' + window.sessionStorage.getItem('nome2');
+        var alerta = setTimeout(trocaNome, 5000);
+        var inter = setInterval(msgIntervalo, 1000);
+    </script>
+</body>
+</html>
